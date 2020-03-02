@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Workshop</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/1420/1420398.svg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="JS/index.js"></script>
+    <section id="requestUser">
+        <button onclick="func_requestUser()">Solicitar Usuario</button>
+    </section>
+    <section id="loginDetails" class="hide">
+        <section class="a" onclick="window.location = ('/phpmyadmin')"><a href="/phpmyadmin">Acceder a la base de datos</a>
+        </section>
+        
+    </section>
+    <section id="popup">
+        <section class="img-container">
+            <img src="Img/TheBridgeLogo.png" alt="">
+        </section>
+        <p>A continuación debera pulsar el botón <b>Solicitar Usuario</b> para obtener acceso a la base de
+            datos.<br><br>Solo podrá crear tablas cuyo nombre comience por su usuario o public (ejemplo: <span
+                style="color: darkblue">su usuario es: "user0"; nueva base de datos: <b>user0_</b>nombre</span> (solo la
+            podrá editar usted) o <span style="color: darkblue">nueva base de datos: <b>public_</b>nombre</span> (la
+            podrá editar cualquiera)</p>
+        <button
+            onclick="document.getElementById('cover').className = 'hide'; document.getElementById('popup').className = 'hide'">Aceptar</button>
+    </section>
+    <section id="cover"></section>
+</body>
+
+</html>
