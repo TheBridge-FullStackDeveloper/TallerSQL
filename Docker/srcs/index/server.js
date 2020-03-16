@@ -20,7 +20,6 @@ const database = mysql.createConnection({
     password: 'IAmTheAdminBitch*',
     multipleStatements: true
 })
-
 database.connect(err => {
     if (err)
         console.log(err);
